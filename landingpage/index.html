@@ -24,6 +24,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="css/styles.css" rel="stylesheet" />
 </head>
+<style>
+    /* Basic styles */
+    .typetext h1 {}
+
+    .typetext h1 span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #1d1f20;
+        width: 100%;
+        border-left: .1em solid transparent;
+        -webkit-animation: typing 3s steps(40) forwards,
+            cursor 1s infinite;
+        animation: typing 3s steps(40) forwards,
+            cursor 1s infinite;
+
+        animation-timing-function: linear;
+
+    }
+
+    /* Animation */
+    @-webkit-keyframes typing {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 0;
+        }
+    }
+
+    @-webkit-keyframes cursor {
+        50% {
+            border-color: white;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: white;
+        }
+    }
+</style>
 
 <body id="page-top">
     <!-- Navigation-->
@@ -48,7 +101,9 @@
                     <a class="" href="#page-top"><img class="img-fluid" src="assets/img/play.png" alt=""
                             style="width: 80px;height: 80px;"></a>
                 </div>
-                <p class="descrpt wow fadeInDown">Design. Performance. Zero Emission.</p>
+                <div class="wrapper typetext ">
+                    <h1 class="descrpt tydemo">Design. Performance. Zero Emission.<span>&nbsp;</span></h1>
+                </div>
             </div>
         </div>
     </header>
@@ -57,7 +112,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="about mb-4 wow fadeInDown">The making</h2>
+                    <h2 class="about  wow fadeInDown">The making</h2>
                     <p class="text-white-50 story wow fadeInDown">
                         The story behind the the making Of the luxurious hypercar
                     </p>
@@ -71,7 +126,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="about mb-4 wow fadeInDown">In talk with</h2>
+                    <h2 class="about  wow fadeInDown">In talk with</h2>
                     <p class="text-white-50 wow fadeInDown story">
                         Paolo Pininfarina On The Celebrated Italian Design House
                     </p>
@@ -90,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-lg-10 mx-auto" style="margin-top: 30px;">
-                    <h2 class="never mb-4 wow fadeInDown">“we never stop aiming for perfection in car design”</h2>
+                    <h2 class="never  wow fadeInDown">“we never stop aiming for perfection in car design”</h2>
                     <p class="text-white-50 polao">
                         Paolo pininfarina
                     </p>
@@ -102,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="about mb-4 wow fadeInDown">THE BATTISTA STORIES</h2>
+                    <h2 class="about  wow fadeInDown">THE BATTISTA STORIES</h2>
                     <p class="text-white-50 wow fadeInDown story">
                         A closer look at the stories Of this pinnacle of luxury
                     </p>
@@ -116,14 +171,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2 class="about mb-4 wow fadeInDown">BeAuty .Purity. Rarity.</h2>
+                    <h2 class="about  wow fadeInDown">BeAuty .Purity. Rarity.</h2>
                     <p class="text-white-50 wow fadeInDown story">
                         The pinnacle of luxury
                     </p>
                 </div>
             </div>
             <img class="img-fluid" src="assets/img/footer.png" alt="" />
-            <p class="storyfooter wow fadeInDown">The World’s First All Electric <br> Automobili Pininfarina Hypercar
+            <p class="storyfooter wow fadeInDown">The World’s First All Electric Automobili Pininfarina Hypercar
             </p>
         </div>
     </section>

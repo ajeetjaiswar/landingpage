@@ -952,7 +952,19 @@ pre code {
 .hidden-xl {
   display: none;
 }
+.socialleft {
+  float: right;
+}
+.about-section {
+  padding-top: 8rem;
+  background: linear-gradient(to bottom, #070a13 0%, rgb(0 0 0 / 96%) 75%, #080b13 100%);
+  position: relative;
+  margin-bottom: -10px;
+}
 @media (max-width: 768px) {
+  .socialleft {
+    float: none;
+  }
   .hidden-md,
   .hidden-lg,
   .hidden-xl {

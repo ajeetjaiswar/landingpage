@@ -7,11 +7,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Car</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
@@ -21,204 +20,433 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/scroller.css">
+
+
+
+    <!-- <script src="js/panelsnap.js" defer></script> -->
+    <!-- <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            window.panelsnap = new PanelSnap();
+        });
+
+
+    </script> -->
 </head>
 <style>
     /* Basic styles */
-    .typetext h1 {}
-
-    .typetext h1 span {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #000000;
-        width: 100%;
-        border-left: .1em solid transparent;
-        -webkit-animation: typing 3s steps(40) forwards,
-            cursor 1s infinite;
-        animation: typing 3s steps(40) forwards,
-            cursor 1s infinite;
-
-        animation-timing-function: linear;
-
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: transparent;
     }
 
-    /* Animation */
-    @-webkit-keyframes typing {
-        from {
-            width: 100%;
-        }
-
-        to {
-            width: 0;
-        }
+    .polao {
+        font-size: 16px !important;
     }
 
-    @-webkit-keyframes cursor {
-        50% {
-            border-color: white;
-        }
+
+    .chrome {
+        background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+        background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+        -webkit-background-size: 200px;
+        color: rgba(255, 255, 255, 0.3);
+        -webkit-background-clip: text;
+        -webkit-animation-name: shine;
+        -webkit-animation-duration: 5s;
+        text-shadow: 0 0px 0px rgb(255 255 255 / 50%);
     }
 
-    @keyframes typing {
-        from {
-            width: 100%;
+    @keyframes shine {
+        10% {
+            opacity: 1;
+            top: -30%;
+            left: -30%;
+            transition-property: left, top, opacity;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-timing-function: ease;
         }
 
-        to {
-            width: 0;
+        100% {
+            opacity: 0;
+            top: -30%;
+            left: -30%;
+            transition-property: left, top, opacity;
         }
     }
 
-    @keyframes cursor {
-        50% {
-            border-color: white;
+    @-webkit-keyframes shine1 {
+
+        0%,
+        10% {
+            background-position: -1000px;
         }
+
+        20% {
+            background-position: top left;
+        }
+
+        90% {
+            background-position: top right;
+        }
+
+        100% {
+            background-position: 1000px;
+        }
+    }
+
+    .typetext1 h1 {
+
+        background: linear-gradient(60deg, #2CDFFF, #2CDFFF, #2CDFFF);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: animate 3s;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: -1000px;
+        }
+
+        100% {
+            background-position: 5%;
+        }
+    }
+
+    .botomtext h1 {
+
+        background: linear-gradient(60deg, #2CDFFF, #2CDFFF, #2CDFFF);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: animate1 10s;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    @keyframes animate1 {
+        0% {
+            background-position: -1000px;
+        }
+
+        100% {
+            background-position: 5%;
+        }
+    }
+
+    .typetext1 h2 {
+
+        background: linear-gradient(60deg, #2CDFFF, #2CDFFF, #2CDFFF);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: animate 5s;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    .typetext1 p {
+
+        background: linear-gradient(60deg, #ffffff, #ffffff, #ffffff);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: animate 6s;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    .typetext2 h2 {
+
+        background: linear-gradient(60deg, #2CDFFF, #2CDFFF, #2CDFFF);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        animation: animate 5s;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: -1000px;
+        }
+
+        100% {
+            background-position: 5%;
+        }
+    }
+
+    .w3-animate-opacity {
+        animation: opac 0.8s;
+        animation-duration: 0.8s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: opac;
+    }
+
+    .mainlogo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle
     }
 </style>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <div class="row mx-auto">
 
-                <div class="col-sm-12">
-                    <a class="" href="#page-top"><img class="img-fluid" src="assets/img/logoo.png" alt="" /></a>
-                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2  wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.4s">
 
+                    <a class="ele desktop" href="#page-top"><img class="img-fluid porta" src="assets/img/portal.png"
+                            alt="" /></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.4s">
+                    <div class="line">
+                        <a class="ele lineback" href="#page-top"><img class="img-fluid hidden-md hidden-lg hidden-xl"
+                                src="assets/img/portallogo.png" alt="" /></a>
+                        <a class="ele" href="#page-top"><img class="img-fluid mainlogo" src="assets/img/logoo.png"
+                                alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 ">
+                </div>
 
             </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <section class="masthead" style="background-color: #000;">
+
         <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
-                    Battista</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5 wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.6s">
-                    Coming To Life</h2>
-                <div class="col-sm-12 play wow fadeInDown">
-                    <a class="" href="#page-top"><img class="img-fluid" src="assets/img/play.png" alt=""
-                            style="width: 80px;height: 80px;"></a>
+            <div class="mx-auto text-center mobiletoptext desktoptext">
+                <div class="wrapper typetext1">
+                    <h1 class="mx-auto my-0 text-uppercase" data-wow-duration="3s" data-wow-delay="0.6s">
+                        Battista</h1>
                 </div>
-                <div class="wrapper typetext ">
+                <h2 class="  mx-auto mt-2 mb-5 elel" data-wow-duration="6s" data-wow-delay="0.6s">
+                    Coming To Life</h2>
+                <div class="col-sm-12 play eleli" data-wow-duration="7s" data-wow-delay="0.6s">
+                    <a class="" href="#page-top"><img class="img-fluid iconplay" src="assets/img/play.png" alt=""
+                            style="width: 70px;height: 70px;"></a>
+                </div>
+                <div class="wrapper botomtext">
                     <h1 class="descrpt tydemo">Design. Performance. Zero Emission.<span>&nbsp;</span></h1>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!-- About-->
     <section class="about-section text-center" id="aboutmaking">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="about  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">The making</h2>
-                    <p class="text-white-50 story wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.6s">
+                <div class="col-lg-10 mx-auto typetext1">
+                    <h2 class="about  wow fadeInDown">The making
+                    </h2>
+                    <p class="  story w3-animate-opacity" data-wow-duration="3s" data-wow-delay="0.6s">
                         The story behind the the making Of the luxurious hypercar
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/video.png" alt="" />
+            <!-- <img class="img-fluid" src="assets/img/video.png" alt="" /> -->
+
+        </div>
+
+        <!--This is Pug, an HTML pre-processor. To see normal HTML, click the dropdown arrow to the right and select "View Compiled HTML"-->
+
+        <div class="range-scroll">
+            <div class="bems-scroller scroll-panel">
+                <div class="scroll-content" id="scrolling-container">
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.7s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.9s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.10s">
+                        <img class="item-image" src="assets/img/video.png" alt="">
+                        <img class="icon" src="assets/img/play.png" alt="" style="width: 60px;height: 60px;">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                </div>
+            </div>
+            <form class="rangeSlider" style="margin-top: 20px;">
+                <input min="0" class="scroll-range" id="scroll-range" type="range" />
+            </form>
         </div>
     </section>
 
     <section class="about-section text-center" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="about  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">In talk with</h2>
-                    <p class="text-white-50 story wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.6s">
+                <div class="col-lg-10 mx-auto typetext1">
+                    <h2 class="about  wow fadeInDown ">In talk with
+                    </h2>
+                    <p class="story wow fadeInDown chrome">
                         Paolo Pininfarina On The Celebrated Italian Design House
                     </p>
                 </div>
             </div>
         </div>
         <div class="row aboutbanner">
-
+            <div class="col-sm-12 playlist hidden-md hidden-lg hidden-xl play wow fadeInDown" data-wow-duration="2s"
+                data-wow-delay="0.3s">
+                <div class="">
+                    <a class="" href="#page-top"><img class="img-fluid iconplay" src="assets/img/play.png" alt=""
+                            style="width: 80px;height: 80px;"></a>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 playlist hidden-md hidden-lg hidden-xl play wow fadeInDown" data-wow-duration="4s"
-                    data-wow-delay="0.6s">
-                    <div class="">
-                        <a class="" href="#page-top"><img class="img-fluid" src="assets/img/play.png" alt=""
-                                style="width: 80px;height: 80px;"></a>
-                    </div>
-                </div>
-                <div class="col-lg-10 mx-auto" style="margin-top: 30px;">
-                    <h2 class="never  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">“we never stop aiming
+
+                <div class="col-lg-10 mx-auto typetext2" style="margin-top: 30px;">
+                    <h2 class="never  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">“we never stop
+                        aiming
                         for perfection in car design”</h2>
-                    <p class="text-white-50 polao wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.6s">
+                    <p class="  story polao">
                         Paolo pininfarina
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about-section text-center" id="about">
+    <section class="about-section text-center battista" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="about wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">THE BATTISTA STORIES
+                <div class="col-lg-10 mx-auto typetext1">
+                    <h2 class="about wow fadeInDown ">THE BATTISTA
+                        STORIES
                     </h2>
-                    <p class="text-white-50 story wow fadeInDown" data-wow-duration="4s" data-wow-delay="0.6s">
+                    <p class=" story chrome">
                         A closer look at the stories Of this pinnacle of luxury
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/car1.png" alt="" />
+            <!-- <img class="img-fluid" src="assets/img/car1.png" alt="" /> -->
 
         </div>
+        <div class="range-scroll-image">
+            <div class="bems-scroller-image scroll-panel">
+                <div class="scroll-content" id="scrolling-container-image">
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <img class="item-image" src="assets/img/car2.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+                        <img class="item-image" src="assets/img/car2.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.7s">
+                        <img class="item-image" src="assets/img/car3.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <img class="item-image" src="assets/img/car4.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.9s">
+                        <img class="item-image" src="assets/img/car2.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                    <div class="scroll-item wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.10s">
+                        <img class="item-image" src="assets/img/car3.png" alt="">
+                        <p class="content-text">The Prototype Story in the words of Paolo Dellacha.</p>
+                    </div>
+                </div>
+            </div>
+            <form class="rangeSlider" style="margin-top: 20px;">
+                <input min="0" class="scroll-range" id="scroll-range-image" type="range" />
+            </form>
+        </div>
     </section>
-    <section class="about-section text-center" id="about">
+    <section class="about-section text-center foot" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2 class="about  wow fadeInDown">BeAuty .Purity. Rarity.</h2>
-                    <p class="text-white-50 wow fadeInDown story">
+                <div class="col-lg-10 mx-auto typetext1">
+                    <h2 class="about  wow fadeInDown " data-wow-duration="2s" data-wow-delay="0.3s">BeAuty
+                        .Purity.
+                        Rarity.</h2>
+                    <p class="story chrome">
                         The pinnacle of luxury
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/footer.png" alt="" />
-            <p class="storyfooter wow fadeInDown">The World’s First All Electric Automobili Pininfarina Hypercar
+            <div class="hidden-md hidden-lg hidden-xl"><a href="#page-top" style="
+    position: absolute;
+    bottom: 73%;
+    opacity: 0.5;
+    left: 46%;
+"><img class="img-fluid" src="assets/img/arrow+circle.png" alt="" /></a></div>
+
+            <img class="img-fluid footerlogo foottime" src="assets/img/footer.png" alt="" />
+            <p class="storyfooter wow fadeInDown " data-wow-duration="3s" data-wow-delay="0.6s">The World’s
+                First
+                All
+                Electricp</p>
+            <p class="storyfooter1 wow fadeInDown " data-wow-duration="3s" data-wow-delay="0.6s">Automobili
+                Pininfarina
+                Hypercar
             </p>
         </div>
-    </section>
+        <!-- Footer-->
+        <footer class="footer small text-center text-white-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 botm">© 2020Automobili Pininfarina Inc. All rights reserved.</div>
+                    <div class="col-sm-6">
 
-    <!-- Footer-->
-    <footer class="footer small text-center text-white-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">© 2020Automobili Pininfarina Inc. All rights reserved.</div>
-                <div class="col-sm-6">
-
-                    <div class="social d-flex justify-content-center socialleft">
-                        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                        <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="mx-2" href="#!"><i class="fab fa-youtube"></i></a>
+                        <div class="social d-flex justify-content-center socialleft">
+                            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-2" href="#!"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </footer>
+    </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
+
     <script src="js/scripts.js"></script>
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="js/jquery.scrollslider.js"></script>
+
 </body>
 
 </html>
